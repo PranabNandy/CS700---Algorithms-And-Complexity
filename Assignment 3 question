@@ -1,0 +1,63 @@
+Algorithms and Complexity – CS700
+Lab Assignment No. 03
+Deadline: 17-12-2020
+
+
+Problem Statement: Let G be an undirected graph for a network. The edges in G
+stand for communication links in the network. Assume that G is connected, that is,
+any node in the network can communicate with any other node in the network.
+However, it is possible that if a link e goes down, the network becomes disconnected,
+that is, some nodes are separated from some other nodes in the network. Links like
+e are the bottlenecks in the network. When you design a communication network, it
+is important to identify the bottleneck edges. This assignment aims at devising
+algorithms for this purpose. Let n denote the number of vertices in G, and m the
+number of edges in G. Name the vertices of G as 0, 1, 2, ... , n – 1.
+Part-I: Write a function getAdjList() that converts the graph G in an adjacency-matrix
+form to the adjacency-list form. Use a linked list (not a dynamically allocated array)
+of neighbours for each vertex.
+Part-II: Write a function lcsize() to compute the size (that is, the number of vertices)
+of the largest connected component of the G. Modify the DFS traversal algorithm to
+solve this problem. The running time of your function should be O(n + m).
+1. Read the number n of vertices in G from the user. Read and store the
+adjacency matrix M of G via I/O files. The matrix must be generated randomly
+and read from an input file. Since G is undirected, read only the entries of M
+above the main diagonal. Call the function of Part-I to convert M to the
+adjacency-list representation of G. Print the neighbours of each vertex using
+the adjacency list in an output file.
+
+2. Call the function of Part-II to compute and print the size of the largest
+connected component of G. If G is not connected, exit. Show the connected
+component in a separate output file.
+3. The n should be as large as possible within the range 8<= n <=500.
+4. The complexity analysis file (PDF) must include your modified DFS algorithm
+(pseudocode) having complexity O(n+m). You must show how this complexity
+is achieved. The file must be along with other analysis information as
+mentioned in previous assignments.
+
+
+Sample I/O
+n = 8
+Adjacency matrix
+0 0 1 0 0 0 0
+1 0 0 0 1 1
+0 0 0 1 1
+0 1 0 0
+0 1 0
+0 1
+0
+
+
+Converting adjacency matrix to adjacency list and Printing the graph from
+adjacency list
+Neighbors of 0: 3
+Neighbors of 1: 2 6 7
+Neighbors of 2: 1 6 7
+Neighbors of 3: 0 5
+Neighbors of 4: 6
+Neighbors of 5: 3 7
+Neighbors of 6: 1 2 4
+Neighbors of 7: 1 2 5
+
+Finding the largest component size
+Component 1: 0 3 5 7 1 2 6 4
+The largest component has 8 nodes
