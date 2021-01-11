@@ -1,0 +1,36 @@
+The graph is: 
+City 0 -- 6 21 23 
+City 1 -- 19 15 2 16 
+City 2 -- 17 1 22 24 
+City 3 -- 4 23 
+City 4 -- 3 15 
+City 5 -- 
+City 6 -- 0 14 24 
+City 7 -- 21 22 17 19 14 16 
+City 8 -- 
+City 9 -- 16 
+City 10 -- 16 14 17 
+City 11 -- 18 
+City 12 -- 
+City 13 -- 23 
+City 14 -- 6 18 10 7 
+City 15 -- 1 4 
+City 16 -- 17 9 1 10 7 
+City 17 -- 2 16 7 24 10 
+City 18 -- 11 14 
+City 19 -- 1 7 21 
+City 20 -- 
+City 21 -- 7 19 0 
+City 22 -- 7 2 
+City 23 -- 3 13 0 
+City 24 -- 17 2 6 
+
+Not all cities are connected by highways 
+
+Building highways: 
+Between City 0 and City 5
+Between City 0 and City 8
+Between City 0 and City 12
+Between City 0 and City 20
+
+All cities are connected by highways
